@@ -33,11 +33,12 @@ In addition to the argument reference list, you can access the following attribu
   Nested scheme for `groups`:
   
   - `description` - (String) The description of the IAM access group.
-  - `iam_service_ids` - (Array of Strings) A list of service IDs that belong to the access group.
-  - `ibm_ids` - (Array of Strings) A list of IBM ID that belong to the access group.
+  - `iam_service_ids` - (Computed, Array of Strings) A list of service IDs that belong to the access group.
+  - `iam_profile_ids` - (Computed, Array of Strings) A list of trusted profile IDs that belong to the access group.
+  - `ibm_ids` - (Computed, Array of Strings) A list of IBM ID that belong to the access group.
   - `id` - (String) The ID of the IAM access group.
   - `name` - (String) The name of the IAM access group.
-  - `rules`- (List) A list of dynamic rules that are applied to the IAM access group.
+  - `rules`- (Computed, List) A list of dynamic rules that are applied to the IAM access group.
 
     Nested scheme for `rules`:
 	- `conditions`- (List) A list of conditions that the rule must satisfy.
